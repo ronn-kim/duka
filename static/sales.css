@@ -1,0 +1,108 @@
+span{
+    color: rgb(253, 185, 0);
+}
+.log_in {
+    border-radius: 10px;
+    background-color: rgba(24, 240, 13, 0.8); /* Slightly transparent background */
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8%; /* Adjust this value to move it down */
+    left: 72%;
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+.log_in .nav-iteml {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.log_in .nav-link {
+    text-decoration: none;
+    color: #ffffff; /* Match the background or your design */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.log_in .nav-link:hover {
+    color: #1c538e; /* Hover color */
+}
+
+/* sales.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand span {
+    color: #007bff;
+}
+
+.make_sale {
+    margin-top: 20px;
+}
+
+.make_sale .btn-primary {
+    margin-bottom: 20px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+.alert-info {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+
+.alert-info ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.alert-info ul li {
+    padding: 5px 0;
+}
+
+.flash-message {
+    animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.animate-btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animate-btn.hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

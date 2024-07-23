@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fbfcfd;
+    
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 130px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    padding-top: 20px;
+    animation-name: slideLeft;
+    animation-duration: 2s;
+    animation-delay: 0.3;
+    animation-timing-function: ease-in;
+}
+
+.logout {
+    position: absolute;
+    bottom: 20px;
+}
+.logout img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links ul li {
+    margin: 30px 0;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+
+.nav-links ul li a:hover {
+    text-decoration: underline;
+    animation-name: rotate;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-delay:0.2s ;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    color: aliceblue;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card p {
+    margin: 0;
+}
+span{
+    color: rgb(229, 128, 13);
+}
+@keyframes slideLeft{
+    from{
+       transform:translateX(-170PX) ;
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+
+    
+
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.dropdown .btn-secondary {
+    background-color: #343a40; /* Dark background for button */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.dropdown .btn-secondary:hover, .dropdown .btn-secondary:focus {
+    background-color: #495057; /* Slightly lighter on hover/focus */
+}
+
+.dropdown .dropdown-menu {
+    background-color: #343a40; /* Dark background for menu */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 10px; /* Space from button */
+}
+
+.dropdown .dropdown-item {
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding */
+    font-size: 16px; /* Font size */
+}
+
+.dropdown .dropdown-item:hover, .dropdown .dropdown-item:focus {
+    background-color: #495057; /* Slightly lighter on hover/focus */
+    color: white; /* White text */
+}
+
+
